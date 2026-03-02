@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: vendor
+    config:
+      contract:
+        enforced: true
+    description: |
+      A standard vendor model for all clients and data sources
+    columns:
+      - name: vendor_key
+        data_type: varchar
+        description: |
+          A concatenated string of all the columns that make up the key to the table
+        tests:
+          - unique
+          - not_null
+      - name: vendor_name
+        data_type: varchar 
+        description: |
+          The name of the vendor
+      - name: remit_address
+        data_type: varchar 
+        description: |
+          A concatenated string of all remit address details for the vendor
+      - name: vendor_type
+        data_type: varchar 
+        description: |
+          The type of vendor.
+      - name: active_status
+        data_type: boolean
+        description: |
+          A boolean indicator showing if the vendor is actively trading.

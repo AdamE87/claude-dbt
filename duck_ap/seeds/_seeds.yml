@@ -1,0 +1,493 @@
+version: 2
+
+seeds:
+  - name: ref_currency
+    description: >
+      ISO 4217 currency reference table. Contains all currencies used across
+      the AP module including the USD base currency and 19 foreign currencies.
+    config:
+      schema: raw
+      column_types:
+        decimal_places: integer
+    columns:
+      - name: currency_code
+        description: ISO 4217 three-letter currency code (PK)
+        data_tests:
+          - unique
+          - not_null
+      - name: currency_name
+        description: Full currency name
+        data_tests:
+          - not_null
+      - name: symbol
+        description: Currency display symbol
+        data_tests:
+          - not_null
+      - name: is_base_currency
+        description: "True for USD (the reporting currency)"
+        data_tests:
+          - not_null
+      - name: decimal_places
+        description: Number of decimal places for the currency (0 for JPY, KRW)
+        data_tests:
+          - not_null
+
+  - name: ref_payment_terms
+    description: >
+      Standard payment terms used on vendor master records and invoices.
+      Includes early-pay discount terms (2/10 Net 30, etc.).
+    config:
+      schema: raw
+      column_types:
+        due_days: integer
+        discount_days: integer
+        discount_pct: "decimal(5,2)"
+    columns:
+      - name: payment_terms_code
+        description: Short code for the payment terms (PK)
+        data_tests:
+          - unique
+          - not_null
+      - name: payment_terms_name
+        description: Human-readable name
+        data_tests:
+          - not_null
+      - name: due_days
+        description: Days until invoice is due (0 = immediate / EOM logic)
+        data_tests:
+          - not_null
+      - name: discount_days
+        description: Days within which early-pay discount applies (0 if none)
+        data_tests:
+          - not_null
+      - name: discount_pct
+        description: Early-pay discount percentage (0.00 if none)
+        data_tests:
+          - not_null
+      - name: description
+        description: Plain-language description of the terms
+
+  - name: ref_gl_account
+    description: >
+      Chart of accounts subset covering AP-relevant accounts: payables (2000s),
+      COGS (5000s), operating expenses (6000s), capex (7000s), and prepaid (1200s).
+    config:
+      schema: raw
+      column_types:
+        gl_account_id: integer
+    columns:
+      - name: gl_account_id
+        description: Numeric GL account identifier (PK)
+        data_tests:
+          - unique
+          - not_null
+      - name: account_name
+        description: Descriptive account name
+        data_tests:
+          - not_null
+      - name: account_type
+        description: High-level account type
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [ASSET, LIABILITY, EXPENSE, REVENUE, EQUITY]
+      - name: account_category
+        description: Functional sub-category
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [ACCOUNTS_PAYABLE, ACCRUED_LIABILITY, DEFERRED_REVENUE, DEBT,
+                       LEASE, COGS, OPEX, CAPEX, PREPAID]
+      - name: is_active
+        description: Whether the account is currently in use
+        data_tests:
+          - not_null
+      - name: normal_balance
+        description: Whether the account normally carries a DEBIT or CREDIT balance
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [DEBIT, CREDIT]
+
+  - name: ref_cost_center
+    description: >
+      Organizational cost centers used to attribute invoice spend to departments.
+      Includes a self-referencing parent_cost_center_id for hierarchy.
+    config:
+      schema: raw
+    columns:
+      - name: cost_center_id
+        description: Cost center identifier (PK)
+        data_tests:
+          - unique
+          - not_null
+      - name: cost_center_name
+        description: Full cost center name
+        data_tests:
+          - not_null
+      - name: department_code
+        description: Short department abbreviation
+        data_tests:
+          - not_null
+      - name: parent_cost_center_id
+        description: Parent cost center (null for top-level)
+      - name: is_active
+        description: Whether the cost center is active
+        data_tests:
+          - not_null
+      - name: budget_owner
+        description: Role or name of the budget owner
+
+  - name: ref_payment_method
+    description: >
+      Approved payment methods for vendor disbursements including electronic
+      (ACH, WIRE, VCARD) and manual (CHECK) methods.
+    config:
+      schema: raw
+      column_types:
+        typical_processing_days: integer
+    columns:
+      - name: payment_method_code
+        description: Short code for the payment method (PK)
+        data_tests:
+          - unique
+          - not_null
+      - name: payment_method_name
+        description: Full name of the payment method
+        data_tests:
+          - not_null
+      - name: is_electronic
+        description: True if the method settles electronically
+        data_tests:
+          - not_null
+      - name: typical_processing_days
+        description: Typical business days to settlement
+        data_tests:
+          - not_null
+
+  - name: ap_vendor
+    description: >
+      Vendor master table. Covers 200 vendors including suppliers, contractors,
+      utilities, government vendors, and intercompany entities. US-headquartered
+      vendors (140) and international vendors (60) with multi-currency support.
+    config:
+      schema: raw
+      column_types:
+        credit_limit: "decimal(18,2)"
+    columns:
+      - name: vendor_id
+        description: Surrogate vendor key (PK, format V####)
+        data_tests:
+          - unique
+          - not_null
+      - name: vendor_name
+        description: Legal vendor name
+        data_tests:
+          - not_null
+      - name: vendor_type
+        description: Vendor classification
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [SUPPLIER, CONTRACTOR, UTILITY, GOVT, INTERCOMPANY]
+      - name: tax_id
+        description: US EIN or international tax identifier
+      - name: country_code
+        description: ISO 3166-1 alpha-2 country code
+        data_tests:
+          - not_null
+      - name: currency_code
+        description: Vendor billing currency (FK → ref_currency)
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('ref_currency')
+              field: currency_code
+      - name: payment_terms_code
+        description: Default payment terms for this vendor (FK → ref_payment_terms)
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('ref_payment_terms')
+              field: payment_terms_code
+      - name: payment_method_code
+        description: Preferred payment method (FK → ref_payment_method)
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('ref_payment_method')
+              field: payment_method_code
+      - name: vendor_status
+        description: Current vendor lifecycle status
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [ACTIVE, INACTIVE, ON_HOLD]
+      - name: remit_address_line1
+        description: Remittance address street line
+      - name: remit_city
+        description: Remittance city
+      - name: remit_state
+        description: US state abbreviation (blank for international vendors)
+      - name: remit_zip
+        description: ZIP/postal code (blank for international vendors)
+      - name: credit_limit
+        description: Approved credit limit in vendor currency
+      - name: is_1099_vendor
+        description: Whether the vendor requires a 1099 at year-end (contractors)
+      - name: created_date
+        description: Date vendor was added to the system
+      - name: inactivated_date
+        description: Date vendor was inactivated (blank if still active)
+      - name: primary_contact_name
+        description: Vendor accounts receivable contact name
+      - name: primary_contact_email
+        description: Vendor accounts receivable contact email
+
+  - name: ap_invoice
+    description: >
+      AP invoice headers for 2,000 invoices spanning 2022-01-01 through 2025-06-30.
+      Covers all lifecycle statuses: PAID, OPEN, OVERDUE, PARTIAL, VOID, ON_HOLD.
+      No invoice line items — header-level only.
+    config:
+      schema: raw
+      column_types:
+        gl_account_id: integer
+        invoice_amount: "decimal(18,2)"
+        invoice_amount_usd: "decimal(18,2)"
+        fx_rate: "decimal(12,6)"
+        tax_amount: "decimal(18,2)"
+        discount_amount: "decimal(18,2)"
+    columns:
+      - name: invoice_id
+        description: Surrogate invoice key (PK, format INV######)
+        data_tests:
+          - unique
+          - not_null
+      - name: vendor_id
+        description: Vendor that issued this invoice (FK → ap_vendor)
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('ap_vendor')
+              field: vendor_id
+      - name: invoice_number
+        description: Vendor-assigned invoice number (unique per vendor)
+        data_tests:
+          - unique
+          - not_null
+      - name: invoice_date
+        description: Date printed on the vendor invoice
+        data_tests:
+          - not_null
+      - name: received_date
+        description: Date the invoice was received by AP
+        data_tests:
+          - not_null
+      - name: due_date
+        description: Date payment is due based on payment terms
+        data_tests:
+          - not_null
+      - name: gl_account_id
+        description: Expense or asset GL account to post this invoice (FK → ref_gl_account)
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('ref_gl_account')
+              field: gl_account_id
+      - name: cost_center_id
+        description: Cost center responsible for this expense (FK → ref_cost_center)
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('ref_cost_center')
+              field: cost_center_id
+      - name: currency_code
+        description: Invoice billing currency (FK → ref_currency)
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('ref_currency')
+              field: currency_code
+      - name: invoice_amount
+        description: Total invoice amount in invoice currency (before tax)
+        data_tests:
+          - not_null
+      - name: invoice_amount_usd
+        description: Total invoice amount converted to USD
+        data_tests:
+          - not_null
+      - name: fx_rate
+        description: FX rate used for USD conversion (invoice_currency per USD)
+        data_tests:
+          - not_null
+      - name: tax_amount
+        description: Tax amount in invoice currency
+        data_tests:
+          - not_null
+      - name: discount_amount
+        description: Early-pay discount available on this invoice
+        data_tests:
+          - not_null
+      - name: payment_terms_code
+        description: Payment terms applied to this invoice (FK → ref_payment_terms)
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('ref_payment_terms')
+              field: payment_terms_code
+      - name: invoice_status
+        description: Current lifecycle status of the invoice
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [PAID, OPEN, OVERDUE, PARTIAL, VOID, ON_HOLD]
+      - name: description
+        description: Brief description of what was purchased
+      - name: po_number
+        description: Purchase order number (blank if no PO)
+      - name: approved_by
+        description: Email of the approver
+        data_tests:
+          - not_null
+      - name: approved_date
+        description: Date the invoice was approved for payment
+        data_tests:
+          - not_null
+      - name: created_at
+        description: Record creation timestamp
+        data_tests:
+          - not_null
+      - name: updated_at
+        description: Record last-updated timestamp
+        data_tests:
+          - not_null
+
+  - name: ap_payment
+    description: >
+      AP disbursements generated by batching invoices per vendor per payment-run week
+      (Tuesday/Thursday runs). Includes full payments for PAID invoices and partial
+      payments for PARTIAL invoices.
+    config:
+      schema: raw
+      column_types:
+        payment_amount: "decimal(18,2)"
+        payment_amount_usd: "decimal(18,2)"
+        fx_rate: "decimal(12,6)"
+    columns:
+      - name: payment_id
+        description: Surrogate payment key (PK, format PAY######)
+        data_tests:
+          - unique
+          - not_null
+      - name: vendor_id
+        description: Vendor receiving this payment (FK → ap_vendor)
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('ap_vendor')
+              field: vendor_id
+      - name: payment_date
+        description: Date the payment was issued
+        data_tests:
+          - not_null
+      - name: payment_method_code
+        description: Method used to remit payment (FK → ref_payment_method)
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('ref_payment_method')
+              field: payment_method_code
+      - name: currency_code
+        description: Currency of the payment (FK → ref_currency)
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('ref_currency')
+              field: currency_code
+      - name: payment_amount
+        description: Payment amount in payment currency
+        data_tests:
+          - not_null
+      - name: payment_amount_usd
+        description: Payment amount converted to USD
+        data_tests:
+          - not_null
+      - name: fx_rate
+        description: FX rate used for USD conversion at time of payment
+        data_tests:
+          - not_null
+      - name: check_number
+        description: Check number for CHECK payments (blank for electronic)
+      - name: bank_account_ref
+        description: Internal reference for the disbursement bank account
+      - name: payment_status
+        description: Current status of the payment
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [CLEARED, OUTSTANDING, VOIDED]
+      - name: cleared_date
+        description: Date the payment cleared the bank (blank if not yet cleared)
+      - name: void_date
+        description: Date the payment was voided (blank if not voided)
+      - name: memo
+        description: Payment memo / reference
+      - name: created_at
+        description: Record creation timestamp
+        data_tests:
+          - not_null
+      - name: created_by
+        description: Email of the AP clerk who created the payment
+        data_tests:
+          - not_null
+
+  - name: ap_payment_application
+    description: >
+      Junction table linking payments to invoices. Each row represents a specific
+      amount applied from a payment to an invoice, including any early-pay discount
+      taken at time of application.
+    config:
+      schema: raw
+      column_types:
+        applied_amount: "decimal(18,2)"
+        discount_taken: "decimal(18,2)"
+    columns:
+      - name: application_id
+        description: Surrogate application key (PK, format APP#######)
+        data_tests:
+          - unique
+          - not_null
+      - name: payment_id
+        description: Payment being applied (FK → ap_payment)
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('ap_payment')
+              field: payment_id
+      - name: invoice_id
+        description: Invoice being closed/reduced (FK → ap_invoice)
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('ap_invoice')
+              field: invoice_id
+      - name: vendor_id
+        description: Vendor (denormalized for partition/filter convenience, FK → ap_vendor)
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('ap_vendor')
+              field: vendor_id
+      - name: applied_amount
+        description: Amount from the payment applied to this invoice (in vendor currency)
+        data_tests:
+          - not_null
+      - name: discount_taken
+        description: Early-pay discount captured at application time
+        data_tests:
+          - not_null
+      - name: applied_date
+        description: Date this application was recorded
+        data_tests:
+          - not_null

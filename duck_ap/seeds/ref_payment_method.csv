@@ -1,0 +1,9 @@
+payment_method_code,payment_method_name,is_electronic,typical_processing_days
+ACH,Automated Clearing House,True,2
+WIRE,Wire Transfer,True,1
+CHECK,Paper Check,False,5
+VCARD,Virtual Card,True,1
+CREDIT_CARD,Corporate Credit Card,True,1
+ZELLE,Zelle Transfer,True,1
+PAYPAL,PayPal,True,2
+BILLPAY,Online Bill Pay,True,3

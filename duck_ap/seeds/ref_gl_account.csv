@@ -1,0 +1,64 @@
+gl_account_id,account_name,account_type,account_category,is_active,normal_balance
+2000,Accounts Payable - Trade,LIABILITY,ACCOUNTS_PAYABLE,True,CREDIT
+2001,Accounts Payable - Intercompany,LIABILITY,ACCOUNTS_PAYABLE,True,CREDIT
+2002,Accrued Expenses,LIABILITY,ACCRUED_LIABILITY,True,CREDIT
+2003,Accrued Payroll,LIABILITY,ACCRUED_LIABILITY,True,CREDIT
+2004,Sales Tax Payable,LIABILITY,ACCRUED_LIABILITY,True,CREDIT
+2005,Deferred Revenue,LIABILITY,DEFERRED_REVENUE,True,CREDIT
+2006,Customer Deposits,LIABILITY,DEFERRED_REVENUE,True,CREDIT
+2007,Current Portion LT Debt,LIABILITY,DEBT,True,CREDIT
+2008,Line of Credit Payable,LIABILITY,DEBT,True,CREDIT
+2009,Accrued Interest Payable,LIABILITY,ACCRUED_LIABILITY,True,CREDIT
+2010,Warranty Reserve,LIABILITY,ACCRUED_LIABILITY,False,CREDIT
+2011,Lease Liability - Current,LIABILITY,LEASE,True,CREDIT
+5000,Cost of Goods Sold - Products,EXPENSE,COGS,True,DEBIT
+5001,Cost of Goods Sold - Services,EXPENSE,COGS,True,DEBIT
+5002,Direct Labor,EXPENSE,COGS,True,DEBIT
+5003,Manufacturing Overhead,EXPENSE,COGS,True,DEBIT
+5004,Freight In,EXPENSE,COGS,True,DEBIT
+5005,Inventory Shrinkage,EXPENSE,COGS,True,DEBIT
+5006,Warranty Expense,EXPENSE,COGS,True,DEBIT
+5007,Cloud Infrastructure COGS,EXPENSE,COGS,True,DEBIT
+5008,Third-Party Licenses COGS,EXPENSE,COGS,True,DEBIT
+5009,Professional Services COGS,EXPENSE,COGS,True,DEBIT
+5010,Depreciation - COGS Assets,EXPENSE,COGS,True,DEBIT
+6000,Salaries & Wages,EXPENSE,OPEX,True,DEBIT
+6001,Employee Benefits,EXPENSE,OPEX,True,DEBIT
+6002,Payroll Taxes,EXPENSE,OPEX,True,DEBIT
+6003,Rent & Lease,EXPENSE,OPEX,True,DEBIT
+6004,Utilities,EXPENSE,OPEX,True,DEBIT
+6005,Office Supplies,EXPENSE,OPEX,True,DEBIT
+6006,Software & Subscriptions,EXPENSE,OPEX,True,DEBIT
+6007,Marketing & Advertising,EXPENSE,OPEX,True,DEBIT
+6008,Travel & Entertainment,EXPENSE,OPEX,True,DEBIT
+6009,Legal & Professional Fees,EXPENSE,OPEX,True,DEBIT
+6010,Insurance,EXPENSE,OPEX,True,DEBIT
+6011,Repairs & Maintenance,EXPENSE,OPEX,True,DEBIT
+6012,Consulting Fees,EXPENSE,OPEX,True,DEBIT
+6013,Recruiting & Hiring,EXPENSE,OPEX,True,DEBIT
+6014,Training & Development,EXPENSE,OPEX,True,DEBIT
+6015,Depreciation - Opex Assets,EXPENSE,OPEX,True,DEBIT
+6016,Amortization - Intangibles,EXPENSE,OPEX,True,DEBIT
+6017,Bank Fees,EXPENSE,OPEX,True,DEBIT
+6018,Dues & Subscriptions,EXPENSE,OPEX,True,DEBIT
+6019,Printing & Postage,EXPENSE,OPEX,False,DEBIT
+6020,Telecommunications,EXPENSE,OPEX,True,DEBIT
+6021,Contract Labor,EXPENSE,OPEX,True,DEBIT
+6022,Temp Agency Fees,EXPENSE,OPEX,True,DEBIT
+6023,Security Services,EXPENSE,OPEX,True,DEBIT
+6024,Janitorial Services,EXPENSE,OPEX,True,DEBIT
+6025,Conference & Events,EXPENSE,OPEX,True,DEBIT
+7000,Computer Equipment,ASSET,CAPEX,True,DEBIT
+7001,Office Furniture & Fixtures,ASSET,CAPEX,True,DEBIT
+7002,Leasehold Improvements,ASSET,CAPEX,True,DEBIT
+7003,Software - Capitalized,ASSET,CAPEX,True,DEBIT
+7004,Vehicles,ASSET,CAPEX,False,DEBIT
+7005,Manufacturing Equipment,ASSET,CAPEX,True,DEBIT
+7006,Lab Equipment,ASSET,CAPEX,True,DEBIT
+7007,Networking Equipment,ASSET,CAPEX,True,DEBIT
+1200,Prepaid Insurance,ASSET,PREPAID,True,DEBIT
+1201,Prepaid Rent,ASSET,PREPAID,True,DEBIT
+1202,Prepaid Software Licenses,ASSET,PREPAID,True,DEBIT
+1203,Prepaid Maintenance Contracts,ASSET,PREPAID,True,DEBIT
+1204,Prepaid Marketing,ASSET,PREPAID,True,DEBIT
+1205,Deposits - Utilities,ASSET,PREPAID,True,DEBIT

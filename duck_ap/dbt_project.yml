@@ -34,3 +34,8 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+
+seeds:
+  duck_ap:
+    +schema: raw
+    +quote_columns: false
