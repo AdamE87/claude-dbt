@@ -1,0 +1,21 @@
+currency_code,currency_name,symbol,is_base_currency,decimal_places
+USD,US Dollar,$,True,2
+EUR,Euro,€,False,2
+GBP,British Pound,£,False,2
+CAD,Canadian Dollar,CA$,False,2
+MXN,Mexican Peso,MX$,False,2
+JPY,Japanese Yen,¥,False,0
+CNY,Chinese Yuan,¥,False,2
+INR,Indian Rupee,₹,False,2
+AUD,Australian Dollar,A$,False,2
+SGD,Singapore Dollar,S$,False,2
+CHF,Swiss Franc,CHF,False,2
+SEK,Swedish Krona,kr,False,2
+NOK,Norwegian Krone,kr,False,2
+DKK,Danish Krone,kr,False,2
+BRL,Brazilian Real,R$,False,2
+KRW,South Korean Won,₩,False,0
+HKD,Hong Kong Dollar,HK$,False,2
+NZD,New Zealand Dollar,NZ$,False,2
+ZAR,South African Rand,R,False,2
+ILS,Israeli Shekel,₪,False,2

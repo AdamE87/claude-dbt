@@ -1,0 +1,201 @@
+vendor_id,vendor_name,vendor_type,tax_id,country_code,currency_code,payment_terms_code,payment_method_code,vendor_status,remit_address_line1,remit_city,remit_state,remit_zip,credit_limit,is_1099_vendor,created_date,inactivated_date,primary_contact_name,primary_contact_email
+V0001,Rock Ventures Group,SUPPLIER,66-9468772,US,USD,2_10_NET30,BILLPAY,ACTIVE,8039 Second Ave,Springfield,MO,30861,137003.86,False,2020-10-09,,Sarah King,s.king@rock.com
+V0002,Maple Staffing LLC,SUPPLIER,46-4934149,US,USD,NET15,WIRE,ON_HOLD,1152 Park Dr,Springfield,IN,51904,83907.02,False,2022-04-18,,Barbara Wilson,b.wilson@maple.com
+V0003,North Systems LP,CONTRACTOR,17-4470105,US,USD,NET30,CHECK,ACTIVE,5863 Elm Dr,Springfield,MO,86556,221346.41,True,2022-04-08,,Donald Smith,d.smith@north.com
+V0004,Pulse Labs PLC,UTILITY,TIN335602191,NO,NOK,NET30,ACH,ON_HOLD,5607 Second Dr,City-NO,,,9094.03,False,2023-06-13,,Mary Harris,m.harris@pulse.com
+V0005,First Systems Corp.,CONTRACTOR,TIN768143326,HK,HKD,NET30,CHECK,ACTIVE,2323 Commerce Dr,City-HK,,,231385.77,True,2018-04-22,,Jennifer Ramirez,j.ramirez@first.com
+V0006,Global Consulting Co.,SUPPLIER,58-6492066,US,USD,NET90,ZELLE,ACTIVE,7805 Main Way,Columbus,GA,52840,146345.74,False,2022-09-23,,Thomas Garcia,t.garcia@global.com
+V0007,Century Power Ltd.,UTILITY,93-2151225,US,USD,NET30,ACH,ACTIVE,2596 Oak Ave,Seattle,WA,14067,19244.18,False,2020-03-27,,Mary Flores,m.flores@century.com
+V0008,Royal Equipment Ltd.,CONTRACTOR,69-5299055,US,USD,NET60,CHECK,ACTIVE,1871 First St,Bellevue,WA,31992,242746.95,True,2019-04-15,,David Martin,d.martin@royal.com
+V0009,Mountain Properties LP,CONTRACTOR,35-2275009,US,USD,NET45,CHECK,ACTIVE,5788 First Dr,Springfield,OH,23356,220058.65,True,2019-05-11,,Andrew Williams,a.williams@mountain.com
+V0010,Westside Products LLC,SUPPLIER,74-6724909,US,USD,NET90,WIRE,ACTIVE,2985 Second Way,Springfield,AL,74251,480785.91,False,2023-02-27,,Barbara Ramirez,b.ramirez@westside.com
+V0011,Vision Manufacturing PLC,SUPPLIER,TIN599154414,DK,DKK,NET30_EOM,PAYPAL,ACTIVE,4669 Park Ave,City-DK,,,300312.56,False,2021-08-13,,Jessica Garcia,j.garcia@vision.com
+V0012,Rock Properties Group,SUPPLIER,TIN130816384,NZ,NZD,NET60,BILLPAY,INACTIVE,4681 First Blvd,City-NZ,,,99101.53,False,2020-05-18,2022-11-10,Thomas Perez,t.perez@rock.com
+V0013,Sun Analytics Ltd.,SUPPLIER,TIN191926217,KR,KRW,NET30_EOM,VCARD,ACTIVE,7442 Commerce St,City-KR,,,209149.78,False,2020-09-11,,Donald Young,d.young@sun.com
+V0014,Crown Materials Ltd.,SUPPLIER,TIN534222401,SE,SEK,NET45,VCARD,ACTIVE,8798 Elm Dr,City-SE,,,335340.41,False,2022-02-20,,Donald Scott,d.scott@crown.com
+V0015,Summit Partners Group,SUPPLIER,99-8612582,US,USD,NET10,VCARD,ACTIVE,3133 Oak Ave,Springfield,IN,42951,363429.32,False,2021-07-16,,Linda Wright,l.wright@summit.com
+V0016,Sapphire Manufacturing Co.,SUPPLIER,TIN207939087,IL,ILS,NET45,VCARD,INACTIVE,2173 Elm St,City-IL,,,121466.75,False,2020-01-05,2022-03-14,James Wright,j.wright@sapphire.com
+V0017,Century Materials Corp.,SUPPLIER,91-9235577,US,USD,2_10_NET30,CREDIT_CARD,ACTIVE,4236 Commerce Dr,Denver,CO,85243,244569.96,False,2021-10-27,,Elizabeth Brown,e.brown@century.com
+V0018,Direct Contractors LP,UTILITY,TIN628008852,KR,KRW,NET30,ACH,ACTIVE,9321 Elm St,City-KR,,,6111.23,False,2018-08-08,,Barbara Martinez,b.martinez@direct.com
+V0019,Integrated Equipment LP,SUPPLIER,87-4786401,US,USD,NET45,BILLPAY,ACTIVE,1086 First St,Spokane,WA,69049,431481.67,False,2022-10-23,,Karen Torres,k.torres@integrated.com
+V0020,Green Innovations Co.,SUPPLIER,TIN809129316,GB,GBP,NET15,WIRE,ACTIVE,6793 Park Way,City-GB,,,127533.94,False,2018-11-04,,David Smith,d.smith@green.com
+V0021,Royal Materials Inc.,CONTRACTOR,39-5833597,US,USD,NET60,ACH,ACTIVE,7065 Main Way,Houston,TX,69510,96684.76,True,2020-12-19,,Emily Gonzalez,e.gonzalez@royal.com
+V0022,Highland Group Co.,UTILITY,28-2198058,US,USD,NET30,ACH,ACTIVE,7779 Second Blvd,Springfield,AZ,50319,13925.66,False,2021-03-28,,Mark Davis,m.davis@highland.com
+V0023,Prime Manufacturing PLC,SUPPLIER,TIN570040006,AU,AUD,1_10_NET60,WIRE,ACTIVE,4202 Main St,City-AU,,,29531.78,False,2022-11-05,,Christopher Hill,c.hill@prime.com
+V0024,Horizon Associates Co.,SUPPLIER,TIN718740490,NO,NOK,NET15,ACH,ACTIVE,9690 Park Dr,City-NO,,,240545.40,False,2022-12-17,,Sarah Lopez,s.lopez@horizon.com
+V0025,Crown Technologies Group,SUPPLIER,62-6591986,US,USD,NET90,ZELLE,ON_HOLD,701 Park St,Springfield,MD,31079,349900.10,False,2021-03-26,,Betty Scott,b.scott@crown.com
+V0026,National Management Group,SUPPLIER,TIN224469868,NO,NOK,1_10_NET30,PAYPAL,INACTIVE,988 Oak Way,City-NO,,,414214.33,False,2018-01-05,2024-08-03,Sandra Clark,s.clark@national.com
+V0027,Peak Telecom PLC,GOVT,16-4415140,US,USD,NET45,CHECK,ACTIVE,9124 Main Way,Springfield,IN,47752,20928.35,False,2020-09-07,,David Martin,d.martin@peak.com
+V0028,Pro Dynamics Ltd.,SUPPLIER,24-8741810,US,USD,1_10_NET30,CREDIT_CARD,ACTIVE,4093 Park Way,Boulder,CO,75323,355651.70,False,2022-08-29,,Donald Walker,d.walker@pro.com
+V0029,Empire Properties Ltd.,SUPPLIER,86-9526867,US,USD,NET90,CREDIT_CARD,ACTIVE,4734 Second Blvd,Springfield,VA,19150,176538.87,False,2023-09-11,,Sarah Smith,s.smith@empire.com
+V0030,Tri Telecom Corp.,GOVT,67-9125900,US,USD,NET45,CHECK,ON_HOLD,6374 Oak Dr,Springfield,MI,82340,93956.70,False,2020-02-12,,Jessica Torres,j.torres@tri.com
+V0031,Cedar Operations PLC,SUPPLIER,58-7477326,US,USD,NET15,ACH,ACTIVE,1733 First Dr,Springfield,TN,74923,256122.66,False,2021-09-21,,Michael Lewis,m.lewis@cedar.com
+V0032,Atlas Group LP,CONTRACTOR,93-3589751,US,USD,NET60,WIRE,ACTIVE,6326 Elm Dr,San Jose,CA,44737,188540.92,True,2018-11-25,,Lisa Wright,l.wright@atlas.com
+V0033,Sterling Capital LLC,SUPPLIER,TIN352082631,NL,EUR,NET30,CREDIT_CARD,ACTIVE,7369 Oak Blvd,City-NL,,,375915.52,False,2022-11-13,,Michael Miller,m.miller@sterling.com
+V0034,Bridge Capital Group,SUPPLIER,17-5921894,US,USD,NET30,CHECK,ACTIVE,1393 First Dr,Springfield,MI,66450,270271.50,False,2020-01-08,,David Lopez,d.lopez@bridge.com
+V0035,Urban Logistics PLC,SUPPLIER,TIN726160204,DE,EUR,NET30,CHECK,ACTIVE,253 Commerce Dr,City-DE,,,235963.46,False,2020-11-06,,Sandra Taylor,s.taylor@urban.com
+V0036,Meridian Holdings LLC,SUPPLIER,66-6797629,US,USD,NET30_EOM,PAYPAL,ACTIVE,8016 Main Ave,Springfield,OH,93746,132548.13,False,2021-05-22,,Richard Harris,r.harris@meridian.com
+V0037,Pioneer Power Co.,SUPPLIER,99-5953150,US,USD,1_10_NET60,ACH,ACTIVE,4789 Commerce Ave,Springfield,AL,45976,433883.02,False,2018-07-20,,Kenneth Young,k.young@pioneer.com
+V0038,United Power Ltd.,SUPPLIER,TIN783563240,MX,MXN,1_10_NET60,VCARD,ON_HOLD,5161 Commerce Dr,City-MX,,,132807.13,False,2019-07-15,,Michael Williams,m.williams@united.com
+V0039,Capital Products Corp.,SUPPLIER,21-5951131,US,USD,NET15,VCARD,ACTIVE,4565 Commerce Ave,Springfield,MD,33021,395391.28,False,2022-02-07,,Dorothy Allen,d.allen@capital.com
+V0040,Key Technologies Co.,SUPPLIER,TIN901611993,SE,SEK,NET10,ZELLE,INACTIVE,9231 Elm St,City-SE,,,239482.38,False,2018-11-05,2020-11-30,Joseph Sanchez,j.sanchez@key.com
+V0041,Premier Analytics Co.,SUPPLIER,78-3073474,US,USD,1_10_NET60,CREDIT_CARD,INACTIVE,510 First Way,Durham,NC,98188,196702.49,False,2022-03-02,2023-04-07,Joseph Walker,j.walker@premier.com
+V0042,Nexus Labs LLC,GOVT,91-8789116,US,USD,NET30,CHECK,ACTIVE,2002 Main Ave,Houston,TX,95097,22579.93,False,2018-06-02,,Karen Young,k.young@nexus.com
+V0043,State Facilities LP,SUPPLIER,68-7224540,US,USD,NET90,CHECK,ACTIVE,4683 Main Blvd,Springfield,TN,86983,330911.73,False,2023-06-28,,Donna Clark,d.clark@state.com
+V0044,Harbor Staffing PLC,GOVT,TIN353524015,SG,SGD,NET30,CHECK,ACTIVE,1092 Park Blvd,City-SG,,,98283.49,False,2022-02-13,,Paul Thompson,p.thompson@harbor.com
+V0045,Gold Equipment PLC,SUPPLIER,21-4558545,US,USD,NET30,ZELLE,INACTIVE,9707 Oak Ave,Springfield,PA,16629,494522.24,False,2020-04-20,2021-03-06,Kimberly Wilson,k.wilson@gold.com
+V0046,North Group Inc.,CONTRACTOR,45-3427461,US,USD,NET60,ACH,ACTIVE,3998 First Blvd,Springfield,CT,32871,223289.58,True,2019-06-24,,James Thompson,j.thompson@north.com
+V0047,Blue Industries Co.,SUPPLIER,16-3126655,US,USD,NET30_EOM,WIRE,ACTIVE,9826 Main Dr,Springfield,VA,78955,41143.44,False,2023-01-11,,Nancy Allen,n.allen@blue.com
+V0048,Sky Labs Inc.,SUPPLIER,94-9748499,US,USD,IMMEDIATE,ACH,ACTIVE,8132 Second Dr,Springfield,MA,94323,499307.51,False,2022-07-04,,Margaret Miller,m.miller@sky.com
+V0049,Core Dynamics Group,GOVT,87-3488628,US,USD,NET45,CHECK,ACTIVE,8382 First Dr,Los Angeles,CA,46046,99516.50,False,2023-12-14,,Charles Robinson,c.robinson@core.com
+V0050,Delta Equipment Ltd.,CONTRACTOR,TIN561784080,DK,DKK,NET30,WIRE,ACTIVE,1657 Elm Dr,City-DK,,,132762.71,True,2023-02-01,,Betty Clark,b.clark@delta.com
+V0051,Evergreen Technologies LLC,CONTRACTOR,21-2432176,US,USD,NET60,CHECK,ACTIVE,9708 First Way,San Jose,CA,22656,124529.37,True,2019-06-17,,Kimberly Brown,k.brown@evergreen.com
+V0052,North Equipment LP,SUPPLIER,55-8095702,US,USD,NET60,CREDIT_CARD,ACTIVE,8000 Oak St,Springfield,VA,47700,60764.28,False,2023-09-10,,Susan Martinez,s.martinez@north.com
+V0053,Pacific Products LLC,INTERCOMPANY,45-4794319,US,USD,NET30,WIRE,ACTIVE,4577 Second Blvd,Springfield,MO,89822,1893626.44,False,2020-12-31,,Mary Lopez,m.lopez@pacific.com
+V0054,Oak Power Inc.,SUPPLIER,33-3403361,US,USD,NET30_EOM,CHECK,ACTIVE,3624 Park Dr,Springfield,OH,19120,320254.29,False,2018-05-06,,Jennifer King,j.king@oak.com
+V0055,River Partners Corp.,SUPPLIER,57-6228407,US,USD,IMMEDIATE,WIRE,ACTIVE,7359 Second Dr,Springfield,VA,84395,86234.15,False,2018-07-23,,Jennifer Moore,j.moore@river.com
+V0056,Sierra Staffing LP,CONTRACTOR,44-4616647,US,USD,NET30,WIRE,ACTIVE,844 Oak Dr,Seattle,WA,55242,106649.29,True,2023-06-17,,Dorothy Martin,d.martin@sierra.com
+V0057,True Consulting Inc.,GOVT,TIN319497661,ZA,ZAR,NET30,CHECK,INACTIVE,226 Park Dr,City-ZA,,,79061.46,False,2020-11-12,2022-12-24,Christopher Davis,c.davis@true.com
+V0058,Frontier Facilities LP,SUPPLIER,78-4860617,US,USD,NET30_EOM,PAYPAL,ON_HOLD,5229 First Dr,Springfield,NV,19447,30728.11,False,2018-03-18,,Sandra Jones,s.jones@frontier.com
+V0059,Tech Resources LP,SUPPLIER,47-2932288,US,USD,1_10_NET60,CHECK,ACTIVE,1834 Oak Dr,Springfield,MN,52568,235447.48,False,2022-01-22,,Jennifer Ramirez,j.ramirez@tech.com
+V0060,Tri Resources LLC,SUPPLIER,TIN524951250,ZA,ZAR,NET30_EOM,CREDIT_CARD,ACTIVE,8463 Second St,City-ZA,,,176361.51,False,2021-09-26,,David Jones,d.jones@tri.com
+V0061,Star Utilities Ltd.,SUPPLIER,54-6890476,US,USD,NET15,WIRE,ACTIVE,1334 Oak Dr,Springfield,VA,40968,135424.43,False,2019-12-12,,Kenneth Martinez,k.martinez@star.com
+V0062,Rock Staffing Group,SUPPLIER,TIN773469560,AU,AUD,NET15,ZELLE,ACTIVE,4600 First St,City-AU,,,225483.78,False,2023-04-05,,Mark Martin,m.martin@rock.com
+V0063,Patriot Utilities LLC,SUPPLIER,49-8746753,US,USD,NET45,ZELLE,ACTIVE,8407 Park Dr,Charlotte,NC,17456,47598.19,False,2019-01-05,,Donna Hill,d.hill@patriot.com
+V0064,Titan Capital PLC,SUPPLIER,83-4158134,US,USD,IMMEDIATE,CHECK,INACTIVE,741 Oak Dr,Springfield,MD,75715,230756.32,False,2021-11-07,2022-10-25,Steven Lopez,s.lopez@titan.com
+V0065,Red Ventures Corp.,UTILITY,56-7255418,US,USD,NET30,ACH,ACTIVE,5501 Main Way,Springfield,MA,63578,16616.97,False,2018-08-03,,Lisa Jones,l.jones@red.com
+V0066,Platform Materials Co.,SUPPLIER,94-3522845,US,USD,NET60,CHECK,ACTIVE,1488 Elm Way,Springfield,MD,86380,162013.55,False,2022-05-25,,William Hill,w.hill@platform.com
+V0067,Pioneer Partners Corp.,UTILITY,95-9831414,US,USD,NET30,ACH,ACTIVE,3609 Elm Dr,San Jose,CA,76648,10427.42,False,2022-01-25,,Karen Lopez,k.lopez@pioneer.com
+V0068,Gold Labs Corp.,SUPPLIER,TIN266371119,GB,GBP,NET45,WIRE,ACTIVE,8726 Main Blvd,City-GB,,,423769.91,False,2019-02-19,,Steven Wright,s.wright@gold.com
+V0069,Urban Facilities LP,GOVT,TIN265627642,CH,CHF,NET30,ACH,ACTIVE,6831 Elm Ave,City-CH,,,84821.06,False,2019-11-10,,Mark Williams,m.williams@urban.com
+V0070,Red Materials PLC,CONTRACTOR,39-9959220,US,USD,NET45,ACH,INACTIVE,8339 First Dr,Rockford,IL,71474,185661.37,True,2022-12-10,2024-09-22,Charles Harris,c.harris@red.com
+V0071,Excel Infrastructure Corp.,UTILITY,TIN368438908,CH,CHF,NET30,ACH,ACTIVE,1780 Second Way,City-CH,,,5782.70,False,2023-05-23,,Nancy Scott,n.scott@excel.com
+V0072,Eagle Materials LLC,SUPPLIER,TIN919390458,BR,BRL,NET45,CHECK,INACTIVE,3737 Commerce Dr,City-BR,,,230166.42,False,2023-10-04,2024-06-15,Margaret Garcia,m.garcia@eagle.com
+V0073,Pacific Associates LP,SUPPLIER,TIN157184151,CA,CAD,1_10_NET30,PAYPAL,ACTIVE,3778 Main Blvd,City-CA,,,193241.13,False,2022-05-01,,Jennifer White,j.white@pacific.com
+V0074,Delta Partners Corp.,SUPPLIER,TIN247746438,IL,ILS,NET45,ACH,ACTIVE,7449 First St,City-IL,,,459524.12,False,2023-04-20,,William Walker,w.walker@delta.com
+V0075,Crest Associates Co.,SUPPLIER,37-3508522,US,USD,NET30,CREDIT_CARD,INACTIVE,7589 Main St,Rochester,NY,24573,157564.09,False,2018-07-15,2021-09-13,Anthony Flores,a.flores@crest.com
+V0076,Silver Associates Ltd.,SUPPLIER,TIN871531100,HK,HKD,NET45,CHECK,ACTIVE,6925 Oak St,City-HK,,,220327.06,False,2021-12-16,,Jessica Torres,j.torres@silver.com
+V0077,Star Products LLC,SUPPLIER,TIN664852025,ZA,ZAR,NET90,ACH,ACTIVE,4255 Second St,City-ZA,,,437932.40,False,2018-06-28,,Matthew White,m.white@star.com
+V0078,Patriot Contractors Group,SUPPLIER,TIN358906986,HK,HKD,1_10_NET60,WIRE,ACTIVE,5872 First Blvd,City-HK,,,370241.62,False,2021-09-23,,William Williams,w.williams@patriot.com
+V0079,Vertex Industries PLC,SUPPLIER,99-9028420,US,USD,NET30_EOM,WIRE,ACTIVE,3402 Main Ave,Springfield,PA,27675,390333.30,False,2023-02-18,,John Jackson,j.jackson@vertex.com
+V0080,Cedar Operations Co.,SUPPLIER,75-7681090,US,USD,EOM,ACH,ON_HOLD,4576 Main Blvd,Rochester,NY,43202,103640.68,False,2022-01-02,,Patricia Perez,p.perez@cedar.com
+V0081,Rapid Resources PLC,CONTRACTOR,59-6688090,US,USD,NET60,WIRE,ACTIVE,7155 First Ave,Jacksonville,FL,75211,103344.14,True,2018-12-05,,Margaret Garcia,m.garcia@rapid.com
+V0082,Sterling Materials Group,CONTRACTOR,23-2343333,US,USD,NET60,WIRE,ACTIVE,7425 Main Blvd,Springfield,MD,50173,193532.58,True,2019-11-14,,Mark Thompson,m.thompson@sterling.com
+V0083,Universal Solutions Co.,SUPPLIER,91-1962308,US,USD,IMMEDIATE,CHECK,ACTIVE,1201 Oak Blvd,San Jose,CA,57619,79961.94,False,2022-11-30,,John Rodriguez,j.rodriguez@universal.com
+V0084,Peak Properties Inc.,CONTRACTOR,TIN749715626,KR,KRW,NET60,ACH,ACTIVE,1359 First Ave,City-KR,,,139984.51,True,2022-02-28,,Nancy Lewis,n.lewis@peak.com
+V0085,Star Products LP,CONTRACTOR,50-5675638,US,USD,NET30,CHECK,ACTIVE,4388 Commerce Blvd,Chicago,IL,13396,149808.79,True,2022-05-05,,Kimberly Davis,k.davis@star.com
+V0086,Ridge Innovations Co.,SUPPLIER,98-9240971,US,USD,2_10_NET30,WIRE,ACTIVE,5792 Second St,Atlanta,GA,27790,94601.62,False,2022-12-29,,Jennifer Lee,j.lee@ridge.com
+V0087,Summit Materials Co.,CONTRACTOR,TIN269119969,MX,MXN,NET60,CHECK,ACTIVE,3773 Main Ave,City-MX,,,235464.89,True,2019-12-15,,Nancy Allen,n.allen@summit.com
+V0088,Elite Logistics PLC,SUPPLIER,13-7054838,US,USD,1_10_NET60,CHECK,ACTIVE,7942 First Dr,Albany,NY,71263,443280.76,False,2018-09-27,,Karen Sanchez,k.sanchez@elite.com
+V0089,Pro Contractors Corp.,SUPPLIER,50-2244282,US,USD,NET15,ZELLE,ACTIVE,8338 Commerce St,Greensboro,NC,99143,440200.47,False,2020-01-16,,William Ramirez,w.ramirez@pro.com
+V0090,Eagle Ventures Corp.,CONTRACTOR,TIN426551245,NL,EUR,NET30,ACH,INACTIVE,1392 Elm Ave,City-NL,,,114532.15,True,2020-07-12,2022-12-17,Dorothy Jackson,d.jackson@eagle.com
+V0091,Vector Manufacturing Corp.,CONTRACTOR,90-6080553,US,USD,NET30,CHECK,ACTIVE,5631 Commerce Way,Springfield,OR,75873,168361.69,True,2019-09-24,,David Flores,d.flores@vector.com
+V0092,Cedar Associates LLC,CONTRACTOR,TIN148814238,DK,DKK,NET60,CHECK,ACTIVE,596 Park Way,City-DK,,,102931.18,True,2020-05-13,,Andrew Clark,a.clark@cedar.com
+V0093,Metro Networks PLC,SUPPLIER,41-7813102,US,USD,NET15,ACH,ACTIVE,5673 First Ave,Springfield,MA,19564,225406.69,False,2023-06-07,,Sandra Wilson,s.wilson@metro.com
+V0094,National Operations Group,GOVT,TIN528118701,SG,SGD,NET45,ACH,ACTIVE,7742 Main Blvd,City-SG,,,56348.21,False,2019-03-11,,Christopher Thomas,c.thomas@national.com
+V0095,Ridge Logistics Corp.,CONTRACTOR,22-1849015,US,USD,NET30,WIRE,ACTIVE,5223 Oak Ave,Springfield,MA,90658,242537.17,True,2019-10-17,,Christopher Torres,c.torres@ridge.com
+V0096,Silver Utilities PLC,SUPPLIER,73-6176450,US,USD,1_10_NET30,PAYPAL,ACTIVE,5881 Main St,Springfield,NJ,21802,234043.01,False,2020-09-13,,Susan Nguyen,s.nguyen@silver.com
+V0097,Meridian Telecom PLC,SUPPLIER,46-1137194,US,USD,NET30_EOM,CREDIT_CARD,ACTIVE,6663 Main Way,Fort Collins,CO,27555,189231.04,False,2022-07-10,,Nancy Williams,n.williams@meridian.com
+V0098,Sun Infrastructure Group,UTILITY,80-5841933,US,USD,NET30,ACH,INACTIVE,2208 Main Dr,San Jose,CA,76093,11755.32,False,2021-02-19,2025-02-14,Donna Davis,d.davis@sun.com
+V0099,Pinnacle Partners Group,SUPPLIER,28-4339637,US,USD,IMMEDIATE,ACH,ACTIVE,7587 Oak Way,Springfield,OR,75546,29067.84,False,2021-09-26,,Donald King,d.king@pinnacle.com
+V0100,Solid Facilities Group,UTILITY,88-6344047,US,USD,NET30,ACH,ACTIVE,8411 Commerce Way,Jacksonville,FL,90805,16089.79,False,2021-05-10,,Emily Perez,e.perez@solid.com
+V0101,State Telecom Co.,CONTRACTOR,TIN609912042,SG,SGD,NET45,ACH,INACTIVE,536 First Dr,City-SG,,,116247.92,True,2019-03-25,2024-05-23,Emily Martin,e.martin@state.com
+V0102,Liberty Labs Inc.,CONTRACTOR,TIN726553348,IN,INR,NET30,WIRE,ACTIVE,617 First St,City-IN,,,154846.47,True,2022-04-07,,Barbara Thomas,b.thomas@liberty.com
+V0103,Gold Associates PLC,SUPPLIER,50-8025967,US,USD,1_10_NET30,PAYPAL,ACTIVE,8598 Oak Way,Springfield,CT,36724,389736.43,False,2023-04-16,,Patricia Rodriguez,p.rodriguez@gold.com
+V0104,Nexus Technologies LP,CONTRACTOR,TIN436889280,IN,INR,NET45,ACH,INACTIVE,8032 Oak Ave,City-IN,,,232424.83,True,2021-11-03,2025-05-24,Daniel Taylor,d.taylor@nexus.com
+V0105,Maple Networks Ltd.,SUPPLIER,48-5848684,US,USD,2_10_NET30,ZELLE,ACTIVE,9495 Second Way,Dallas,TX,74094,180913.56,False,2021-01-25,,Charles Davis,c.davis@maple.com
+V0106,Pioneer Resources Group,SUPPLIER,28-5872986,US,USD,2_10_NET30,ZELLE,ACTIVE,8924 Elm Way,Springfield,AZ,20358,331426.30,False,2023-05-17,,Susan Gonzalez,s.gonzalez@pioneer.com
+V0107,Lincoln Facilities LLC,GOVT,88-5014486,US,USD,NET30,ACH,ACTIVE,1747 Second Ave,Chicago,IL,97796,14724.20,False,2022-08-20,,Lisa Walker,l.walker@lincoln.com
+V0108,Apex Holdings LP,CONTRACTOR,TIN801038300,NZ,NZD,NET45,WIRE,ACTIVE,1069 Commerce St,City-NZ,,,180107.74,True,2021-03-22,,Christopher Jackson,c.jackson@apex.com
+V0109,Vision Labs Inc.,SUPPLIER,32-8010946,US,USD,NET15,BILLPAY,ON_HOLD,4988 First Way,Miami,FL,62034,468938.28,False,2021-03-31,,John Smith,j.smith@vision.com
+V0110,Diamond Partners Co.,CONTRACTOR,TIN587853601,IN,INR,NET60,CHECK,ACTIVE,4570 Oak St,City-IN,,,154863.71,True,2019-07-04,,Steven Robinson,s.robinson@diamond.com
+V0111,North Holdings PLC,SUPPLIER,92-5316188,US,USD,NET45,ZELLE,INACTIVE,7107 First Blvd,Dallas,TX,11846,288212.80,False,2020-03-02,2021-08-23,Donna Sanchez,d.sanchez@north.com
+V0112,Crown Resources LLC,SUPPLIER,33-3359075,US,USD,NET45,ACH,ACTIVE,5047 First Way,Springfield,NJ,42512,197951.45,False,2023-01-04,,Sarah Perez,s.perez@crown.com
+V0113,Atlas Management Group,GOVT,TIN843854609,MX,MXN,NET30,ACH,ACTIVE,6742 Second Way,City-MX,,,70100.75,False,2023-03-22,,Karen Hernandez,k.hernandez@atlas.com
+V0114,Mountain Equipment Co.,INTERCOMPANY,57-4705235,US,USD,NET30,WIRE,ACTIVE,7814 Commerce Way,Springfield,IL,72676,729778.35,False,2022-03-11,,Anthony Scott,a.scott@mountain.com
+V0115,Willow Innovations Ltd.,SUPPLIER,97-2373555,US,USD,NET10,ZELLE,INACTIVE,3412 First Way,Springfield,NV,79228,459449.91,False,2019-04-05,2020-06-10,Kimberly Allen,k.allen@willow.com
+V0116,Evergreen Holdings Group,SUPPLIER,76-8412854,US,USD,NET10,BILLPAY,ACTIVE,2261 First Dr,Boulder,CO,86434,450455.78,False,2022-12-30,,Patricia Robinson,p.robinson@evergreen.com
+V0117,River Consulting PLC,UTILITY,96-6170227,US,USD,NET30,ACH,ACTIVE,1296 Main Dr,Springfield,VA,61897,8816.86,False,2018-01-13,,Susan Nguyen,s.nguyen@river.com
+V0118,Pacific Contractors Inc.,SUPPLIER,TIN174108740,JP,JPY,IMMEDIATE,BILLPAY,ACTIVE,6235 Park Dr,City-JP,,,150674.45,False,2020-01-08,,William Clark,w.clark@pacific.com
+V0119,Pioneer Properties LLC,SUPPLIER,97-3231198,US,USD,1_10_NET30,CHECK,ACTIVE,472 Elm Dr,Springfield,PA,25549,202598.73,False,2019-06-06,,Joseph Smith,j.smith@pioneer.com
+V0120,Sterling Solutions LP,SUPPLIER,39-5152562,US,USD,NET30,CREDIT_CARD,ACTIVE,356 Oak Ave,Durham,NC,30332,469331.08,False,2019-04-08,,John Clark,j.clark@sterling.com
+V0121,Cloud Enterprises Inc.,SUPPLIER,67-1816653,US,USD,NET30,BILLPAY,ACTIVE,4839 Oak Way,Chicago,IL,62725,274482.31,False,2018-08-20,,William Allen,w.allen@cloud.com
+V0122,National Operations Ltd.,SUPPLIER,48-3403511,US,USD,NET45,CREDIT_CARD,ACTIVE,8220 Main Blvd,Springfield,TN,64206,39869.24,False,2019-12-19,,Margaret Scott,m.scott@national.com
+V0123,Vertex Properties Group,SUPPLIER,99-7984768,US,USD,NET15,PAYPAL,ACTIVE,5027 Commerce Ave,Springfield,MO,49306,379663.89,False,2023-04-24,,Jessica Anderson,j.anderson@vertex.com
+V0124,Rock Consulting LP,SUPPLIER,63-9891787,US,USD,NET30,CREDIT_CARD,ACTIVE,1614 First Ave,Springfield,CT,41831,171828.87,False,2018-11-20,,Mark White,m.white@rock.com
+V0125,Century Manufacturing LP,CONTRACTOR,96-1663497,US,USD,NET60,CHECK,INACTIVE,351 Oak Ave,Los Angeles,CA,87015,161770.10,True,2023-05-18,2024-06-14,Lisa Martin,l.martin@century.com
+V0126,Eagle Technologies Ltd.,CONTRACTOR,99-4431161,US,USD,NET45,WIRE,ACTIVE,4385 Elm Way,Springfield,MN,82362,126132.35,True,2023-12-26,,Daniel Martin,d.martin@eagle.com
+V0127,Silver Systems LLC,UTILITY,70-6372622,US,USD,NET30,ACH,ACTIVE,4372 First Way,Augusta,GA,51015,11208.95,False,2020-06-25,,Barbara Johnson,b.johnson@silver.com
+V0128,Titan Services Co.,SUPPLIER,29-4291551,US,USD,2_10_NET30,VCARD,ACTIVE,8137 Park Ave,Springfield,MD,59786,279814.84,False,2021-10-14,,Thomas Young,t.young@titan.com
+V0129,Patriot Holdings Corp.,CONTRACTOR,79-9192588,US,USD,NET30,ACH,ACTIVE,2352 Commerce Ave,Miami,FL,78674,239037.62,True,2018-07-18,,James Clark,j.clark@patriot.com
+V0130,Cloud Group Inc.,SUPPLIER,37-9484790,US,USD,EOM,BILLPAY,ACTIVE,6839 Main St,Durham,NC,17923,249048.65,False,2018-01-28,,Paul Scott,p.scott@cloud.com
+V0131,Star Manufacturing Co.,UTILITY,12-9425786,US,USD,NET30,ACH,ACTIVE,4048 Oak Way,San Antonio,TX,33496,6605.25,False,2019-01-30,,Dorothy Martinez,d.martinez@star.com
+V0132,Star Management Group,SUPPLIER,44-7658817,US,USD,1_10_NET60,BILLPAY,ACTIVE,619 Main Dr,San Diego,CA,63218,129171.87,False,2020-07-14,,Karen Garcia,k.garcia@star.com
+V0133,Pioneer Properties PLC,CONTRACTOR,TIN160252954,NL,EUR,NET30,CHECK,ACTIVE,5527 First St,City-NL,,,190569.03,True,2018-12-05,,Ashley Ramirez,a.ramirez@pioneer.com
+V0134,Star Capital Ltd.,SUPPLIER,37-8977571,US,USD,1_10_NET30,CREDIT_CARD,ACTIVE,356 Oak Way,Springfield,IN,19744,286119.83,False,2018-05-15,,Elizabeth Lee,e.lee@star.com
+V0135,Empire Resources LLC,SUPPLIER,48-3725462,US,USD,EOM,PAYPAL,ON_HOLD,1384 First Blvd,Springfield,OH,84277,449297.63,False,2021-09-20,,Matthew Rodriguez,m.rodriguez@empire.com
+V0136,Century Enterprises LP,CONTRACTOR,TIN349262723,JP,JPY,NET45,ACH,ACTIVE,4578 Commerce Dr,City-JP,,,171033.75,True,2022-06-13,,Christopher Johnson,c.johnson@century.com
+V0137,Sierra Labs Group,SUPPLIER,80-7298619,US,USD,NET10,PAYPAL,ACTIVE,1444 Elm Ave,Springfield,MO,99088,388362.03,False,2021-04-24,,Jessica Jones,j.jones@sierra.com
+V0138,Pioneer Group LP,GOVT,50-7051545,US,USD,NET45,CHECK,INACTIVE,3170 Park Dr,Denver,CO,10680,42392.57,False,2021-01-09,2022-02-02,William Garcia,w.garcia@pioneer.com
+V0139,Sun Utilities LP,SUPPLIER,23-1440601,US,USD,1_10_NET60,WIRE,ACTIVE,4881 Park Dr,San Diego,CA,82642,303041.46,False,2021-08-21,,Matthew Smith,m.smith@sun.com
+V0140,Crest Logistics Corp.,GOVT,97-7387623,US,USD,NET45,CHECK,ACTIVE,4621 Park Blvd,Tampa,FL,45247,54381.15,False,2018-09-17,,David Ramirez,d.ramirez@crest.com
+V0141,Sapphire Contractors Group,SUPPLIER,42-5137094,US,USD,2_10_NET30,VCARD,ACTIVE,5543 Commerce Way,Springfield,VA,87831,62416.46,False,2021-06-01,,James Sanchez,j.sanchez@sapphire.com
+V0142,Pioneer Partners PLC,UTILITY,TIN459420281,IL,ILS,NET30,ACH,ACTIVE,9983 Second Ave,City-IL,,,11459.24,False,2019-07-12,,Karen Lee,k.lee@pioneer.com
+V0143,Sapphire Operations Corp.,SUPPLIER,60-6354241,US,USD,NET60,VCARD,ACTIVE,9338 Oak Way,Springfield,MA,85481,194267.10,False,2022-05-29,,Nancy Davis,n.davis@sapphire.com
+V0144,Sterling Industries Inc.,SUPPLIER,69-4517316,US,USD,EOM,PAYPAL,ACTIVE,2625 Second Dr,Durham,NC,19064,254658.58,False,2021-05-25,,Jessica Taylor,j.taylor@sterling.com
+V0145,Pioneer Contractors PLC,SUPPLIER,86-9040224,US,USD,1_10_NET30,PAYPAL,ACTIVE,1492 Main Ave,Springfield,OH,80040,28014.93,False,2022-01-12,,Paul Hill,p.hill@pioneer.com
+V0146,Westside Power Corp.,SUPPLIER,92-1743175,US,USD,NET10,PAYPAL,ACTIVE,8599 First Way,Springfield,OH,53463,15168.41,False,2020-11-25,,Joseph Allen,j.allen@westside.com
+V0147,Tech Labs PLC,SUPPLIER,TIN501707828,CA,CAD,2_10_NET30,PAYPAL,ACTIVE,502 Park St,City-CA,,,388447.69,False,2023-08-12,,Barbara Thompson,b.thompson@tech.com
+V0148,Metro Services LLC,SUPPLIER,TIN224628497,SE,SEK,NET60,CHECK,ACTIVE,8012 Elm Dr,City-SE,,,162826.27,False,2023-02-09,,Susan King,s.king@metro.com
+V0149,Delta Staffing PLC,SUPPLIER,TIN442426442,BR,BRL,NET45,WIRE,ACTIVE,1891 Second Ave,City-BR,,,31894.70,False,2019-04-17,,Mary Perez,m.perez@delta.com
+V0150,Integrated Ventures Corp.,UTILITY,TIN692609167,CH,CHF,NET30,ACH,ACTIVE,6736 Second Ave,City-CH,,,7402.04,False,2022-10-13,,Sandra Anderson,s.anderson@integrated.com
+V0151,Global Solutions LP,SUPPLIER,13-4310554,US,USD,NET30_EOM,ACH,ACTIVE,1767 Commerce Way,Greensboro,NC,60965,115250.09,False,2021-02-14,,Robert Torres,r.torres@global.com
+V0152,Global Products Group,SUPPLIER,35-8676422,US,USD,1_10_NET30,BILLPAY,ACTIVE,6531 First St,Colorado Springs,CO,97910,483299.04,False,2021-07-07,,Kenneth Harris,k.harris@global.com
+V0153,Pacific Power PLC,SUPPLIER,89-3894531,US,USD,EOM,WIRE,ACTIVE,2016 Oak Blvd,Springfield,TN,90541,75634.41,False,2019-04-28,,Jessica Martin,j.martin@pacific.com
+V0154,Empire Utilities LP,CONTRACTOR,TIN549080818,JP,JPY,NET30,CHECK,ACTIVE,8904 Second Ave,City-JP,,,164961.21,True,2022-09-29,,Elizabeth Young,e.young@empire.com
+V0155,Sun Holdings PLC,SUPPLIER,46-3353785,US,USD,NET60,ACH,ACTIVE,6390 First Way,Orlando,FL,69113,476402.56,False,2023-06-08,,William Gonzalez,w.gonzalez@sun.com
+V0156,Vision Telecom LP,CONTRACTOR,97-9249791,US,USD,NET30,ACH,ACTIVE,4603 Oak Way,Springfield,MO,74054,163079.56,True,2020-06-22,,Charles Williams,c.williams@vision.com
+V0157,Meridian Holdings PLC,CONTRACTOR,82-9309978,US,USD,NET45,ACH,ACTIVE,7331 First Ave,New York,NY,85066,205022.61,True,2022-02-11,,Paul Williams,p.williams@meridian.com
+V0158,Quality Enterprises Ltd.,CONTRACTOR,TIN419662531,DE,EUR,NET45,ACH,ACTIVE,3982 Oak Way,City-DE,,,102563.04,True,2018-12-23,,Mark Davis,m.davis@quality.com
+V0159,Pacific Solutions Corp.,SUPPLIER,88-3335975,US,USD,1_10_NET30,ZELLE,INACTIVE,9483 Elm Way,Savannah,GA,17780,147731.66,False,2019-11-21,2022-03-12,Charles Jackson,c.jackson@pacific.com
+V0160,Delta Facilities LP,INTERCOMPANY,17-5652716,US,USD,NET30,WIRE,ON_HOLD,8119 Oak Way,Springfield,PA,27392,874515.86,False,2021-08-12,,Jessica Sanchez,j.sanchez@delta.com
+V0161,Valley Manufacturing LP,INTERCOMPANY,58-8583162,US,USD,NET30,WIRE,ACTIVE,8096 Elm Way,San Francisco,CA,62802,1273420.21,False,2021-02-13,,Nancy Robinson,n.robinson@valley.com
+V0162,Apex Dynamics PLC,CONTRACTOR,91-7009980,US,USD,NET30,WIRE,INACTIVE,9568 Oak Way,San Jose,CA,38551,148942.99,True,2021-08-15,2023-09-14,Lisa Scott,l.scott@apex.com
+V0163,Sierra Partners Inc.,SUPPLIER,15-2670586,US,USD,NET15,WIRE,ACTIVE,2261 Second Blvd,Springfield,PA,12134,226230.11,False,2018-01-03,,Margaret Gonzalez,m.gonzalez@sierra.com
+V0164,Excel Manufacturing LLC,SUPPLIER,TIN802858478,AU,AUD,NET45,ZELLE,INACTIVE,3936 Park St,City-AU,,,50386.06,False,2019-11-09,2020-08-21,Betty Martin,b.martin@excel.com
+V0165,Delta Analytics Ltd.,CONTRACTOR,71-2307594,US,USD,NET45,CHECK,ACTIVE,2265 Park St,Springfield,CT,78084,51857.39,True,2021-11-08,,Linda Ramirez,l.ramirez@delta.com
+V0166,Horizon Properties LLC,UTILITY,23-2731434,US,USD,NET30,ACH,ON_HOLD,8791 First St,Springfield,MD,49223,7056.94,False,2019-06-30,,Barbara Jones,b.jones@horizon.com
+V0167,Universal Holdings PLC,SUPPLIER,54-4574477,US,USD,NET30,BILLPAY,ACTIVE,9759 Second Dr,Springfield,PA,63963,52477.14,False,2019-02-16,,William Davis,w.davis@universal.com
+V0168,Pacific Solutions Group,SUPPLIER,27-5157165,US,USD,NET30_EOM,CREDIT_CARD,ACTIVE,8448 Oak Dr,Springfield,IN,42527,23143.96,False,2021-05-20,,Susan King,s.king@pacific.com
+V0169,Metro Consulting Ltd.,SUPPLIER,73-7474085,US,USD,1_10_NET30,WIRE,ACTIVE,2262 Park Way,Boulder,CO,75481,445475.02,False,2018-02-19,,Nancy Lee,n.lee@metro.com
+V0170,Pulse Products Corp.,INTERCOMPANY,70-2224599,US,USD,NET30,WIRE,ACTIVE,8400 Elm Way,Springfield,AL,11807,893277.92,False,2018-06-13,,Patricia Sanchez,p.sanchez@pulse.com
+V0171,Pulse Solutions LP,SUPPLIER,TIN188506190,FR,EUR,NET45,CHECK,ACTIVE,2645 First Blvd,City-FR,,,50962.57,False,2018-11-20,,Steven Wilson,s.wilson@pulse.com
+V0172,Premier Contractors Co.,UTILITY,TIN850197517,BR,BRL,NET30,ACH,ACTIVE,1512 Park St,City-BR,,,11562.29,False,2020-09-04,,Patricia Thomas,p.thomas@premier.com
+V0173,River Consulting Co.,SUPPLIER,95-3946849,US,USD,NET15,ACH,ACTIVE,4347 Oak Blvd,Denver,CO,27984,253242.34,False,2021-11-21,,Dorothy King,d.king@river.com
+V0174,East Manufacturing LLC,SUPPLIER,13-6620552,US,USD,NET45,WIRE,ON_HOLD,8468 Elm St,Springfield,MO,78662,359038.39,False,2018-11-12,,Ashley Robinson,a.robinson@east.com
+V0175,Silver Holdings Group,SUPPLIER,30-5280137,US,USD,NET30,WIRE,INACTIVE,853 Park Blvd,Seattle,WA,85223,372982.18,False,2018-01-11,2019-01-06,James Thomas,j.thomas@silver.com
+V0176,Platform Group Corp.,UTILITY,14-8035849,US,USD,NET30,ACH,ACTIVE,9464 Elm St,Rockford,IL,42540,11243.85,False,2021-08-03,,Sarah Jones,s.jones@platform.com
+V0177,Sky Consulting Corp.,SUPPLIER,TIN339643129,NZ,NZD,NET90,ACH,ACTIVE,5462 Main Way,City-NZ,,,43773.95,False,2023-03-21,,Charles Martin,c.martin@sky.com
+V0178,River Analytics Group,CONTRACTOR,35-5892153,US,USD,NET45,ACH,ON_HOLD,4116 Oak St,Springfield,OH,91620,123654.73,True,2023-07-14,,Richard Wright,r.wright@river.com
+V0179,Pro Associates Ltd.,CONTRACTOR,79-6812025,US,USD,NET60,ACH,ACTIVE,8780 Oak Dr,Springfield,PA,53911,125254.97,True,2021-06-13,,Michael Wilson,m.wilson@pro.com
+V0180,Sierra Consulting Corp.,SUPPLIER,45-2560728,US,USD,NET30_EOM,PAYPAL,ACTIVE,1665 First Ave,Springfield,AZ,78125,448833.19,False,2023-02-21,,Jennifer Nguyen,j.nguyen@sierra.com
+V0181,Vector Resources LLC,SUPPLIER,TIN735543236,FR,EUR,NET90,ACH,ACTIVE,4376 Commerce Blvd,City-FR,,,334597.52,False,2019-06-20,,Jessica Jackson,j.jackson@vector.com
+V0182,Premier Operations Group,SUPPLIER,67-5562662,US,USD,1_10_NET60,CHECK,ACTIVE,7735 Elm Dr,Chicago,IL,36569,63396.69,False,2019-03-09,,David Lewis,d.lewis@premier.com
+V0183,Eagle Power Ltd.,SUPPLIER,TIN585242269,CA,CAD,2_10_NET30,CREDIT_CARD,ACTIVE,5084 Commerce Way,City-CA,,,139853.88,False,2019-05-07,,Jennifer Hernandez,j.hernandez@eagle.com
+V0184,Cedar Innovations Group,SUPPLIER,TIN259261469,GB,GBP,NET30_EOM,WIRE,ACTIVE,902 Second Blvd,City-GB,,,131627.21,False,2021-12-28,,Betty Allen,b.allen@cedar.com
+V0185,Liberty Industries Inc.,SUPPLIER,61-8586676,US,USD,NET10,BILLPAY,ACTIVE,1110 Commerce Ave,Buffalo,NY,22415,403909.41,False,2019-07-27,,Linda Smith,l.smith@liberty.com
+V0186,East Infrastructure LP,SUPPLIER,57-2409947,US,USD,NET10,ACH,ACTIVE,5532 Main St,Springfield,OH,19828,106897.66,False,2022-12-22,,William Garcia,w.garcia@east.com
+V0187,Rock Consulting Corp.,CONTRACTOR,83-8267158,US,USD,NET45,ACH,ACTIVE,3166 Elm Blvd,Springfield,VA,75028,186642.58,True,2019-12-09,,Daniel Wilson,d.wilson@rock.com
+V0188,Ridge Group Inc.,SUPPLIER,TIN759391912,FR,EUR,EOM,VCARD,ACTIVE,1099 Main Blvd,City-FR,,,154601.53,False,2022-08-15,,Kimberly Walker,k.walker@ridge.com
+V0189,Platform Facilities LP,SUPPLIER,35-9821696,US,USD,2_10_NET30,ZELLE,ACTIVE,8331 Elm Dr,Chicago,IL,60134,276813.72,False,2023-06-09,,Daniel Torres,d.torres@platform.com
+V0190,Lincoln Industries Inc.,UTILITY,50-4674549,US,USD,NET30,ACH,INACTIVE,3913 Oak St,Springfield,AL,17679,17129.81,False,2023-04-17,2025-04-08,Daniel Nguyen,d.nguyen@lincoln.com
+V0191,Integrated Logistics Co.,UTILITY,78-1937991,US,USD,NET30,ACH,ACTIVE,2985 Oak Way,Tacoma,WA,85457,17697.58,False,2022-05-10,,Daniel Lopez,d.lopez@integrated.com
+V0192,National Power Inc.,SUPPLIER,99-6900247,US,USD,2_10_NET30,VCARD,ON_HOLD,1578 Main Ave,Springfield,OH,83807,275641.05,False,2019-12-21,,Ashley Williams,a.williams@national.com
+V0193,United Labs Inc.,SUPPLIER,77-9019324,US,USD,NET15,VCARD,ACTIVE,459 Oak Way,Springfield,AL,90495,176971.93,False,2019-12-28,,Christopher Brown,c.brown@united.com
+V0194,Empire Equipment Group,GOVT,19-7267813,US,USD,NET45,ACH,ACTIVE,8082 Second Blvd,San Antonio,TX,86810,37158.86,False,2019-07-13,,David Ramirez,d.ramirez@empire.com
+V0195,Frontier Power Ltd.,SUPPLIER,TIN814609188,DE,EUR,NET90,CHECK,ACTIVE,129 Second Way,City-DE,,,160343.38,False,2021-04-21,,William Lopez,w.lopez@frontier.com
+V0196,Premier Capital Corp.,UTILITY,87-6338793,US,USD,NET30,ACH,ACTIVE,1374 Oak Blvd,Springfield,OR,93839,13483.25,False,2023-07-26,,Barbara Perez,b.perez@premier.com
+V0197,National Holdings LLC,GOVT,95-6632941,US,USD,NET30,ACH,ON_HOLD,120 Main Dr,Charlotte,NC,44761,72385.85,False,2021-12-06,,Thomas Miller,t.miller@national.com
+V0198,Red Services Corp.,GOVT,62-9272543,US,USD,NET30,CHECK,ACTIVE,1307 Commerce St,Springfield,MN,81568,84592.63,False,2020-07-12,,David Lewis,d.lewis@red.com
+V0199,Metro Associates Group,CONTRACTOR,43-2756994,US,USD,NET30,WIRE,ACTIVE,8009 Second St,San Diego,CA,32296,196397.02,True,2019-01-17,,Lisa Hill,l.hill@metro.com
+V0200,Rapid Holdings LP,SUPPLIER,30-1898516,US,USD,NET90,VCARD,INACTIVE,3991 Main St,Colorado Springs,CO,36941,351626.38,False,2020-12-22,2025-03-03,Charles Martin,c.martin@rapid.com

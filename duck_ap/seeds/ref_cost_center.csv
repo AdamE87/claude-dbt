@@ -1,0 +1,21 @@
+cost_center_id,cost_center_name,department_code,parent_cost_center_id,is_active,budget_owner
+CC100,Executive,EXEC,,True,CEO
+CC110,Engineering,ENG,CC100,True,CTO
+CC111,Product,PROD,CC110,True,CPO
+CC112,Infrastructure,INFRA,CC110,True,VP Engineering
+CC200,Finance,FIN,CC100,True,CFO
+CC201,Accounting,ACCT,CC200,True,Controller
+CC210,Human Resources,HR,CC100,True,CHRO
+CC211,Recruiting,RECR,CC210,True,VP People
+CC300,Marketing,MKT,CC100,True,CMO
+CC400,Sales,SALES,CC100,True,CRO
+CC401,Enterprise Sales,ENT,CC400,True,VP Enterprise
+CC402,SMB Sales,SMB,CC400,True,VP SMB
+CC500,Customer Success,CS,CC100,True,VP Customer Success
+CC501,Support,SUPP,CC500,True,Director Support
+CC600,Legal,LEGAL,CC100,True,General Counsel
+CC700,Facilities,FACIL,CC100,True,Director Facilities
+CC800,IT,IT,CC100,True,CIO
+CC900,Data & Analytics,DATA,CC110,True,VP Data
+CC910,Security,SEC,CC800,True,CISO
+CC999,Corporate,CORP,,True,CFO
