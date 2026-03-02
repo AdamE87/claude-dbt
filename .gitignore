@@ -1,0 +1,3 @@
+/logs
+.venv
+/dbt_packages
